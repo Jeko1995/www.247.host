@@ -18,6 +18,7 @@ public class HomePage extends BasePage{
     private WebElement loginBtn;
 
     // Methods i.e. actions on the page
+    // This method click on the login button
     public LoginPage clickLoginBtn() {
     loginBtn.click();
     return new LoginPage(driver);

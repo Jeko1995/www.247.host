@@ -24,5 +24,16 @@ public class LoginPage extends BasePage{
     private WebElement loginBtn;
 
     // Methods i.e. actions on the page
+    // This method fill in email and password field and click login button
+    public void login (String username, String password) {
+        emailInput.click();
+        emailInput.clear();
+        emailInput.sendKeys(username);
 
+        passwordInput.click();
+        passwordInput.clear();
+        passwordInput.sendKeys(password);
+
+        loginBtn.click();
+    }
 }

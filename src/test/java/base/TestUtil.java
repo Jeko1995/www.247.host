@@ -4,16 +4,18 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 public class TestUtil extends DataProviders {
-
     public WebDriver driver;
+
     private String browser, targetURL;
 
     // Method to set up the WebDriver and open the target URL before each test method.
@@ -41,7 +43,7 @@ public class TestUtil extends DataProviders {
             properties.load(fileInputStream);
             targetURL = properties.getProperty("url");
             browser = properties.getProperty("browser");
-        } catch (IOException e) {
+            } catch (IOException e) {
             System.out.println(e);
         }
     }
@@ -50,6 +52,9 @@ public class TestUtil extends DataProviders {
     private void setupDriver() {
         if (driver == null) {
             switch (browser) {
+                case "chrome":
+                    driver = setupChromeDriver();
+                    break;
                 case "firefox":
                     driver = setupFireFoxDriver();
                     break;

@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="First commit with added dependency">
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="Create basepage, homepage and loginpage, setup test util file">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithCorrectData17.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/validLoginCredentials.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +49,7 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.LoginWithCorrectData17">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="www.247.host" />
@@ -62,8 +63,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginWithCorrectData17" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="www.247.host" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.login" />
+      <option name="MAIN_CLASS_NAME" value="tests.login.LoginWithCorrectData17" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginWithCorrectData17" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -85,11 +104,20 @@
       <option name="project" value="LOCAL" />
       <updated>1710861046762</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create basepage, homepage and loginpage, setup test util file">
+      <option name="closed" value="true" />
+      <created>1710946570389</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1710946570389</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit with added dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit with added dependency" />
+    <MESSAGE value="Create basepage, homepage and loginpage, setup test util file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create basepage, homepage and loginpage, setup test util file" />
   </component>
 </project>
