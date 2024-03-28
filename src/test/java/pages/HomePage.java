@@ -14,7 +14,7 @@ public class HomePage extends BasePage{
     }
 
     // Elements
-    @FindBy(className = "btn-login-navbar mr-lg-2 mr-xl-3 mr-xxl-4 mr-xxxl-6")
+    @FindBy(css= ".btn-login-navbar.mr-lg-2")
     private WebElement loginBtn;
 
     // Methods i.e. actions on the page

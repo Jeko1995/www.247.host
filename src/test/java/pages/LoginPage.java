@@ -20,7 +20,7 @@ public class LoginPage extends BasePage{
     @FindBy(id = "password")
     private WebElement passwordInput;
 
-    @FindBy(className = "btn btn-login w-75")
+    @FindBy(css = ".btn.btn-login")
     private WebElement loginBtn;
 
     // Methods i.e. actions on the page
