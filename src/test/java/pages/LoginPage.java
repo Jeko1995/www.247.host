@@ -25,7 +25,7 @@ public class LoginPage extends BasePage{
 
     // Methods i.e. actions on the page
     // This method fill in email and password field and click login button
-    public void login (String username, String password) {
+    public UserPanelPage login (String username, String password) {
         emailInput.click();
         emailInput.clear();
         emailInput.sendKeys(username);
@@ -35,5 +35,6 @@ public class LoginPage extends BasePage{
         passwordInput.sendKeys(password);
 
         loginBtn.click();
+        return new UserPanelPage(driver);
     }
 }

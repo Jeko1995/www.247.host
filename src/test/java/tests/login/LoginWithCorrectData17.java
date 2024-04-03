@@ -1,9 +1,11 @@
 package tests.login;
 
 import base.TestUtil;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
+import pages.UserPanelPage;
 
 public class LoginWithCorrectData17 extends TestUtil {
 
@@ -14,6 +16,9 @@ public class LoginWithCorrectData17 extends TestUtil {
         // Perform successful login with valid credentials.
         HomePage homePage = new HomePage(driver);
         LoginPage loginPage = homePage.clickLoginBtn();
-        loginPage.login(username, password);
+        UserPanelPage userPanelPage = loginPage.login(username, password);
+
+        // Assert that the user is successfully logged in.
+        Assert.assertTrue(userPanelPage.isAt());
     }
 }

@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="Continue working on successful login test. Still having problems with run test in chrome and to find correct locators">
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="Adding correct locators">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/UserPanelPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithCorrectData17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithCorrectData17.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +25,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -134,13 +138,22 @@
       <option name="project" value="LOCAL" />
       <updated>1711033339913</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adding correct locators">
+      <option name="closed" value="true" />
+      <created>1711658286021</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1711658286021</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit with added dependency" />
     <MESSAGE value="Create basepage, homepage and loginpage, setup test util file" />
     <MESSAGE value="Continue working on successful login test. Still having problems with run test in chrome and to find correct locators" />
-    <option name="LAST_COMMIT_MESSAGE" value="Continue working on successful login test. Still having problems with run test in chrome and to find correct locators" />
+    <MESSAGE value="Adding correct locators" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding correct locators" />
   </component>
 </project>
