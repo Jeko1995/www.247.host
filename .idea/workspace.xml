@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="Adding correct locators">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/UserPanelPage.java" afterDir="false" />
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="Adding assert for the user panel page">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithInvalidCredentials18.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithCorrectData17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithCorrectData17.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/UserPanelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/UserPanelPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithCorrectData17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithValidCredentials17.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/validLoginCredentials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/validLoginCredentials.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +33,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -38,17 +44,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.LoginWithCorrectData17.loginWithCorrectData17">
+}]]></component>
+  <component name="RunManager" selected="TestNG.LoginWithValidCredentials17">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="www.247.host" />
@@ -62,7 +70,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginWithCorrectData17" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginWithValidCredentials17" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="www.247.host" />
       <extension name="coverage">
         <pattern>
@@ -71,7 +79,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests.login" />
-      <option name="MAIN_CLASS_NAME" value="tests.login.LoginWithCorrectData17" />
+      <option name="MAIN_CLASS_NAME" value="tests.login.LoginWithValidCredentials17" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -79,7 +87,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginWithCorrectData17.loginWithCorrectData17" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginWithValidCredentials17.loginWithCorrectData17" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="www.247.host" />
       <extension name="coverage">
         <pattern>
@@ -88,7 +96,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests.login" />
-      <option name="MAIN_CLASS_NAME" value="tests.login.LoginWithCorrectData17" />
+      <option name="MAIN_CLASS_NAME" value="tests.login.LoginWithValidCredentials17" />
       <option name="METHOD_NAME" value="loginWithCorrectData17" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -99,8 +107,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginWithCorrectData17.loginWithCorrectData17" />
-        <item itemvalue="TestNG.LoginWithCorrectData17" />
+        <item itemvalue="TestNG.LoginWithValidCredentials17" />
+        <item itemvalue="TestNG.LoginWithValidCredentials17.loginWithCorrectData17" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -146,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711658286021</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding assert for the user panel page">
+      <option name="closed" value="true" />
+      <created>1712156613591</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712156613591</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -154,6 +170,7 @@
     <MESSAGE value="Create basepage, homepage and loginpage, setup test util file" />
     <MESSAGE value="Continue working on successful login test. Still having problems with run test in chrome and to find correct locators" />
     <MESSAGE value="Adding correct locators" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding correct locators" />
+    <MESSAGE value="Adding assert for the user panel page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding assert for the user panel page" />
   </component>
 </project>

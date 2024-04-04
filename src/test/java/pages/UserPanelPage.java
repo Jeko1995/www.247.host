@@ -19,7 +19,7 @@ public class UserPanelPage extends BasePage{
 
     // Elements
     @FindBy(css = ".logged-user.mr-3")
-    private WebElement loggedUserNameAndIcon;
+    private WebElement loggedUserNameAndIconBtn;
 
     // Methods i.e. actions on the page
     //Checks if user is аt current page
@@ -27,7 +27,7 @@ public class UserPanelPage extends BasePage{
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 
         try {
-            wait.until(ExpectedConditions.visibilityOf(loggedUserNameAndIcon));
+            wait.until(ExpectedConditions.visibilityOf(loggedUserNameAndIconBtn));
 
             return true;
         } catch (Exception e) {

@@ -4,13 +4,11 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Properties;
 
 public class TestUtil extends DataProviders {
@@ -23,6 +21,7 @@ public class TestUtil extends DataProviders {
     public void setupDriverAndOpenTargetURL() {
         readConfig("src/test/resources/config.properties");
         setupDriver();
+        driver.manage().window().maximize();
         driver.get(targetURL);
     }
 
@@ -52,14 +51,8 @@ public class TestUtil extends DataProviders {
     private void setupDriver() {
         if (driver == null) {
             switch (browser) {
-                case "chrome":
-                    driver = setupChromeDriver();
-                    break;
-                case "firefox":
-                    driver = setupFireFoxDriver();
-                    break;
-                default:
-                    driver = setupChromeDriver();
+                case "firefox" -> driver = setupFireFoxDriver();
+                default -> driver = setupChromeDriver();
             }
         }
     }

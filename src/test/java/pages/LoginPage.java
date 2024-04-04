@@ -23,6 +23,9 @@ public class LoginPage extends BasePage{
     @FindBy(css = ".btn.btn-login")
     private WebElement loginBtn;
 
+    @FindBy(css = "span[role='alert']")
+    private WebElement loginErrorMsg;
+
     // Methods i.e. actions on the page
     // This method fill in email and password field and click login button
     public UserPanelPage login (String username, String password) {
