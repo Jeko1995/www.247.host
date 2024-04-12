@@ -16,7 +16,7 @@ public class LoginWithValidCredentials17 extends TestUtil {
         // Perform successful login with valid credentials.
         HomePage homePage = new HomePage(driver);
         LoginPage loginPage = homePage.clickLoginBtn();
-        UserPanelPage userPanelPage = loginPage.login(username, password);
+        UserPanelPage userPanelPage = loginPage.enterUserDataAndLogin(username, password);
 
         // Assert that the user is successfully logged in.
         Assert.assertTrue(userPanelPage.isAt());
