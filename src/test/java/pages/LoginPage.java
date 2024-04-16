@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,10 +12,13 @@ import java.time.Duration;
 
 public class LoginPage extends BasePage{
 
+    protected JavascriptExecutor js;
+
     // Constructor
     public LoginPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
+        js = (JavascriptExecutor) driver;
     }
 
     // Elements
@@ -36,6 +40,7 @@ public class LoginPage extends BasePage{
     // Methods i.e. actions on the page
     // This method fill in email and password field and click login button
     public UserPanelPage enterUserDataAndLogin(String username, String password) {
+
         emailInput.click();
         emailInput.clear();
         emailInput.sendKeys(username);
@@ -44,6 +49,7 @@ public class LoginPage extends BasePage{
         passwordInput.clear();
         passwordInput.sendKeys(password);
 
+        js.executeScript("arguments[0].scrollIntoView();",loginBtn);
         loginBtn.click();
         return new UserPanelPage(driver);
     }
