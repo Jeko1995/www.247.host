@@ -30,6 +30,9 @@ public class LoginPage extends BasePage{
     @FindBy(css = "span[role='alert']")
     private WebElement loginErrorMsg;
 
+    @FindBy(className = "forgotten-password-link-2")
+    private WebElement forgottenPasswordLink;
+
     // Methods i.e. actions on the page
     // This method fill in email and password field and click login button
     public UserPanelPage enterUserDataAndLogin(String username, String password) {
@@ -58,5 +61,12 @@ public class LoginPage extends BasePage{
             System.out.println("Error: Element is not found on this page!");
             return false;
         }
+    }
+
+    //This method click forgotten password link
+    public ResetPasswordPage clickForgottenPasswordLink(){
+
+        forgottenPasswordLink.click();
+        return new ResetPasswordPage(driver);
     }
 }
