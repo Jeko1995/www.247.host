@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<suite name="All Tests" thread-count="1" parallel="tests" annotations="JDK" verbose="1">
+    <test name="login">
+        <classes>
+            <class name="tests.login.LoginWithCorrectCredentials17"/>
+            <class name="tests.login.LoginWithInvalidCredentials18"/>
+            <class name="tests.login.CheckResetPassBackBtn20"/>
+        </classes>
+    </test>
+</suite>

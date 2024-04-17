@@ -6,20 +6,29 @@ import org.testng.annotations.DataProvider;
 
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class DataProviders {
 
     //Data provider for valid login credentials.
-    @DataProvider(name = "validLoginCredentials")
-    public Object[][] readValidLoginCredentials() {
+    @DataProvider(name = "correctLoginCredentials")
+    public Object[][] readCorrectLoginCredentials() {
         try {
-            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/validLoginCredentials.csv"));
+            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctLoginCredentials.csv"));
             List<String[]> csvData = csvReader.readAll();
-            Object[][] csvDataObj = new Object[csvData.size()][2];
+            List<String[]> validRows = new ArrayList<>();
 
-            for (int i = 0; i < csvData.size(); i++) {
-                csvDataObj[i] = csvData.get(i);
+            for (String[] row : csvData) {
+                if (!row[0].startsWith("//")) {
+                    validRows.add(row);
+                }
+            }
+
+            Object[][] csvDataObj = new Object[validRows.size()][2];
+
+            for (int i = 0; i < validRows.size(); i++) {
+                csvDataObj[i] = validRows.get(i);
             }
 
             return csvDataObj;
@@ -36,10 +45,17 @@ public class DataProviders {
         try {
             CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/invalidLoginCredentials.csv"));
             List<String[]> csvData = csvReader.readAll();
-            Object[][] csvDataObj = new Object[csvData.size()][2];
+            List<String[]> validRows = new ArrayList<>();
 
-            for (int i = 0; i < csvData.size(); i++) {
-                csvDataObj[i] = csvData.get(i);
+            for (String[] row : csvData) {
+                if (!row[0].startsWith("//")) {
+                    validRows.add(row);
+                }
+            }
+
+            Object[][] csvDataObj = new Object[validRows.size()][2];
+            for (int i = 0; i < validRows.size(); i++) {
+                csvDataObj[i] = validRows.get(i);
             }
 
             return csvDataObj;

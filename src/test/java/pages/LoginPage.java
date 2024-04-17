@@ -72,6 +72,7 @@ public class LoginPage extends BasePage{
     //This method click forgotten password link
     public ResetPasswordPage clickForgottenPasswordLink(){
 
+        js.executeScript("arguments[0].scrollIntoView();",forgottenPasswordLink);
         forgottenPasswordLink.click();
         return new ResetPasswordPage(driver);
     }

@@ -21,3 +21,14 @@ public class LoginWithInvalidCredentials18 extends TestUtil {
         Assert.assertTrue(loginPage.isAt());
     }
 }
+//Invalid login credentials for invalidLoginCredentials.csv file
+/*
+incorrectEmail@ema.jsh,Automation1!
+automation@eurocoders.org,incorrectPassword
+incorrectEmail@ema.jsh,incorrectPassword
+automation@eurocoders.org,
+,Automation1!
+,
+incorrectEmail@ema.jsh,
+,incorrectPassword
+ */
