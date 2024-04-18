@@ -13,7 +13,7 @@ public class CheckResetPassBackBtn20 extends TestUtil {
    @Test()
     public void checkResetPassBackBtn20 () {
 
-        // Go to the reset password page and click back button
+       // Go to the reset password page and click back button
        HomePage homePage = new HomePage(driver);
        ResetPasswordPage resetPasswordPage = homePage.clickLoginBtn().clickForgottenPasswordLink();
        LoginPage loginPage = resetPasswordPage.clickBackBtn();

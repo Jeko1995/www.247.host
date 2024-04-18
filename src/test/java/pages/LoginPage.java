@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,13 +11,10 @@ import java.time.Duration;
 
 public class LoginPage extends BasePage{
 
-    protected JavascriptExecutor js;
-
     // Constructor
     public LoginPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
-        js = (JavascriptExecutor) driver;
     }
 
     // Elements
@@ -28,7 +24,7 @@ public class LoginPage extends BasePage{
     @FindBy(id = "password")
     private WebElement passwordInput;
 
-    @FindBy(css = ".btn.btn-login")
+    @FindBy(className = "btn-login")
     private WebElement loginBtn;
 
     @FindBy(css = "span[role='alert']")
@@ -70,7 +66,7 @@ public class LoginPage extends BasePage{
     }
 
     //This method click forgotten password link
-    public ResetPasswordPage clickForgottenPasswordLink(){
+    public ResetPasswordPage clickForgottenPasswordLink() {
 
         js.executeScript("arguments[0].scrollIntoView();",forgottenPasswordLink);
         forgottenPasswordLink.click();

@@ -26,7 +26,7 @@ public class TestUtil extends DataProviders {
     }
 
     // Method to close the WebDriver after each test method.
-    @AfterMethod
+    //@AfterMethod
     public void tearDown() {
         if (driver != null) {
             driver.quit();

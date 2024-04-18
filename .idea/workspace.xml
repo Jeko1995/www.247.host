@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="Adding assert for the user panel page">
-      <change afterPath="$PROJECT_DIR$/src/test/suites/allTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="Adding auto scroll when is needed and add commenting option for csv files to skip some user data that is not needed. Check how to do reset pass test">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/login/CheckForgottenPass19.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithInvalidCredentials18.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithInvalidCredentials18.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithValidCredentials17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithCorrectCredentials17.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/validLoginCredentials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/correctLoginCredentials.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ResetPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ResetPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/CheckResetPassBackBtn20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/CheckResetPassBackBtn20.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +170,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="TestNG.LoginWithValidCredentials17" />
       <item itemvalue="TestNG.LoginWithCorrectCredentials17" />
       <item itemvalue="TestNG.LoginWithInvalidCredentials18" />
     </list>
@@ -254,7 +255,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712956825715</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adding auto scroll when is needed and add commenting option for csv files to skip some user data that is not needed. Check how to do reset pass test">
+      <option name="closed" value="true" />
+      <created>1713361434244</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713361434244</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -265,6 +274,7 @@
     <MESSAGE value="Adding assert for the user panel page" />
     <MESSAGE value="Finish valid user login, rename class and start work on second case with invalid users. Still needs to check first one" />
     <MESSAGE value="Finish invalid users login and start work on checking back button on reset password page." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finish invalid users login and start work on checking back button on reset password page." />
+    <MESSAGE value="Adding auto scroll when is needed and add commenting option for csv files to skip some user data that is not needed. Check how to do reset pass test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding auto scroll when is needed and add commenting option for csv files to skip some user data that is not needed. Check how to do reset pass test" />
   </component>
 </project>
