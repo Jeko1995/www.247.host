@@ -6,6 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.Email.EmailLoginPage;
 
 import java.time.Duration;
 
@@ -39,27 +40,28 @@ public class ResetPasswordPage extends BasePage{
     }
 
     //This method fill in email field and submit the form
-    public void enterEmailAndSubmit(String username) {
+    public ResetPasswordPage enterEmailAndSubmit(String username) {
 
         resetPassEmailInput.click();
         resetPassEmailInput.clear();
         resetPassEmailInput.sendKeys(username);
 
-        //js.executeScript("arguments[0].scrollIntoView();",resetPassSubmitBtn);
+        js.executeScript("arguments[0].scrollIntoView();",resetPassSubmitBtn);
         resetPassSubmitBtn.click();
+        return this;
     }
 
     //This method check that confirmation message for reset password is displayed
-    public void checkConfirmationMsg(){
+    public EmailLoginPage checkConfirmationMsg(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 
         try {
             wait.until(ExpectedConditions.visibilityOf(sendMailSuccessMsg));
 
-            js.executeScript("window.open()");
         }catch (Exception e) {
             // If element is not visible, throw AssertionError
             throw new AssertionError("Error: Element is not found on this page!", e);
         }
+        return new EmailLoginPage(driver);
     }
 }

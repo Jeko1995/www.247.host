@@ -15,6 +15,7 @@ public class TestUtil extends DataProviders {
     public WebDriver driver;
 
     private String browser, targetURL;
+    public String emailUrl;
 
     // Method to set up the WebDriver and open the target URL before each test method.
     @BeforeMethod
@@ -42,6 +43,7 @@ public class TestUtil extends DataProviders {
             properties.load(fileInputStream);
             targetURL = properties.getProperty("url");
             browser = properties.getProperty("browser");
+            emailUrl = properties.getProperty("email");
             } catch (IOException e) {
             System.out.println(e);
         }
