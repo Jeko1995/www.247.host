@@ -45,24 +45,21 @@ public class ResetPasswordPage extends BasePage{
         resetPassEmailInput.clear();
         resetPassEmailInput.sendKeys(username);
 
-        js.executeScript("arguments[0].scrollIntoView();",resetPassSubmitBtn);
+        //js.executeScript("arguments[0].scrollIntoView();",resetPassSubmitBtn);
         resetPassSubmitBtn.click();
     }
 
     //This method check that confirmation message for reset password is displayed
-    public boolean checkConfirmationMsg(){
+    public void checkConfirmationMsg(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 
         try {
             wait.until(ExpectedConditions.visibilityOf(sendMailSuccessMsg));
 
             js.executeScript("window.open()");
-
-            return true;
         }catch (Exception e) {
-            // If element is not visible, return false and custom error message
-            System.out.println("Error: Element is not found on this page!");
-            return false;
+            // If element is not visible, throw AssertionError
+            throw new AssertionError("Error: Element is not found on this page!", e);
         }
     }
 }
