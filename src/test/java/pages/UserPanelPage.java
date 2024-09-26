@@ -18,7 +18,7 @@ public class UserPanelPage extends BasePage{
     }
 
     // Elements
-    @FindBy(css = ".logged-user.mr-3")
+    @FindBy(xpath = "(//a[@class='logged-user mr-3 d-flex align-items-center'])[2]")
     private WebElement loggedUserNameAndIconBtn;
 
     // Methods i.e. actions on the page

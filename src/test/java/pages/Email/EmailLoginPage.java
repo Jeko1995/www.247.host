@@ -2,6 +2,7 @@ package pages.Email;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.WindowType;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import pages.BasePage;
@@ -29,10 +30,7 @@ public class EmailLoginPage extends BasePage {
     // This method open new tab and load email url
     public EmailLoginPage openEmailLoginPage(String emailUrl){
 
-        js.executeScript("window.open()");
-        String newTabHandle = driver.getWindowHandles().stream().reduce((first, second) -> second).orElse(null);
-
-        driver.switchTo().window(newTabHandle);
+        driver.switchTo().newWindow(WindowType.TAB);
         driver.get(emailUrl);
         return this;
     }

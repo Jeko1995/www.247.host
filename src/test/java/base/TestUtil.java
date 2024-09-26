@@ -3,7 +3,9 @@ package base;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -62,12 +64,17 @@ public class TestUtil extends DataProviders {
     // Method to set up the ChromeDriver.
     private WebDriver setupChromeDriver() {
         WebDriverManager.chromedriver().setup();
-        return driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--incognito");
+        options.addArguments("start-maximized");
+        return driver = new ChromeDriver(options);
     }
 
     // Method to set up the FirefoxDriver.
     private WebDriver setupFireFoxDriver() {
         WebDriverManager.firefoxdriver().setup();
-        return driver = new FirefoxDriver();
+        FirefoxOptions options = new FirefoxOptions();
+        options.addArguments("-private");
+        return driver = new FirefoxDriver(options);
     }
 }

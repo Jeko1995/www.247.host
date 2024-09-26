@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="Fixing problem with not failing test for forgotten pass when cant find confirmation msg on the page">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Email/EmailLoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/emailLoginCredentials.csv" afterDir="false" />
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="Continue working on test for forgotten password, now I can login to mail after sending request">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ResetPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ResetPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Email/EmailLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Email/EmailLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/UserPanelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/UserPanelPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/CheckForgottenPass19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/CheckForgottenPass19.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
@@ -279,7 +277,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713527019177</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Continue working on test for forgotten password, now I can login to mail after sending request">
+      <option name="closed" value="true" />
+      <created>1713557442406</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713557442406</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -293,6 +299,7 @@
     <MESSAGE value="Adding auto scroll when is needed and add commenting option for csv files to skip some user data that is not needed. Check how to do reset pass test" />
     <MESSAGE value="Working on test for changing password. Make data provider for getting only username and make methods to fill in field for email and check if confirmation message is send" />
     <MESSAGE value="Fixing problem with not failing test for forgotten pass when cant find confirmation msg on the page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing problem with not failing test for forgotten pass when cant find confirmation msg on the page" />
+    <MESSAGE value="Continue working on test for forgotten password, now I can login to mail after sending request" />
+    <option name="LAST_COMMIT_MESSAGE" value="Continue working on test for forgotten password, now I can login to mail after sending request" />
   </component>
 </project>
