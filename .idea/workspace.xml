@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="Continue working on test for forgotten password, now I can login to mail after sending request">
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Adding in setup driver methods open in incognito mode and start maximized for chrome browser. Driver manage window maximize still stay after setup driver for firefox maximization. &#10;&#10;- Updating loggedUserNameAndIconBtn element in UserPanelPage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Email/EmailLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Email/EmailLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/UserPanelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/UserPanelPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/CheckForgottenPass19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/CheckForgottenPass19.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +281,15 @@
       <option name="project" value="LOCAL" />
       <updated>1713557442406</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="- Adding in setup driver methods open in incognito mode and start maximized for chrome browser. Driver manage window maximize still stay after setup driver for firefox maximization. &#10;&#10;- Updating loggedUserNameAndIconBtn element in UserPanelPage">
+      <option name="closed" value="true" />
+      <created>1727361848890</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1727361848890</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -300,6 +304,7 @@
     <MESSAGE value="Working on test for changing password. Make data provider for getting only username and make methods to fill in field for email and check if confirmation message is send" />
     <MESSAGE value="Fixing problem with not failing test for forgotten pass when cant find confirmation msg on the page" />
     <MESSAGE value="Continue working on test for forgotten password, now I can login to mail after sending request" />
-    <option name="LAST_COMMIT_MESSAGE" value="Continue working on test for forgotten password, now I can login to mail after sending request" />
+    <MESSAGE value="- Adding in setup driver methods open in incognito mode and start maximized for chrome browser. Driver manage window maximize still stay after setup driver for firefox maximization. &#10;&#10;- Updating loggedUserNameAndIconBtn element in UserPanelPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Adding in setup driver methods open in incognito mode and start maximized for chrome browser. Driver manage window maximize still stay after setup driver for firefox maximization. &#10;&#10;- Updating loggedUserNameAndIconBtn element in UserPanelPage" />
   </component>
 </project>
