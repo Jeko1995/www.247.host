@@ -6,7 +6,6 @@ import org.openqa.selenium.WindowType;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import pages.BasePage;
-import pages.UserPanelPage;
 
 public class EmailLoginPage extends BasePage {
 

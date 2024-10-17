@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Adding methods for handling cookies and close debug bar. Using this methods in @BeforeMethod to apply changes for all tests">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Email/EmailInboxesTest.java" afterDir="false" />
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Start building EmailInboxesTest with email testing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Email/EmailInboxesTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Email/EmailLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/Email/EmailPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ResetPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ResetPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/CheckForgottenPass19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/CheckForgottenPass19.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -298,7 +301,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728319083338</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="- Start building EmailInboxesTest with email testing">
+      <option name="closed" value="true" />
+      <created>1728569401274</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1728569401274</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -315,6 +326,7 @@
     <MESSAGE value="Continue working on test for forgotten password, now I can login to mail after sending request" />
     <MESSAGE value="- Adding in setup driver methods open in incognito mode and start maximized for chrome browser. Driver manage window maximize still stay after setup driver for firefox maximization. &#10;&#10;- Updating loggedUserNameAndIconBtn element in UserPanelPage" />
     <MESSAGE value="- Adding methods for handling cookies and close debug bar. Using this methods in @BeforeMethod to apply changes for all tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Adding methods for handling cookies and close debug bar. Using this methods in @BeforeMethod to apply changes for all tests" />
+    <MESSAGE value="- Start building EmailInboxesTest with email testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Start building EmailInboxesTest with email testing" />
   </component>
 </project>

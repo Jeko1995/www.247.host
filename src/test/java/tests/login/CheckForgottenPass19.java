@@ -15,7 +15,6 @@ public class CheckForgottenPass19 extends TestUtil {
         // Go to the reset password page and check is option for forgotten password works correctly
         HomePage homePage = new HomePage(driver);
         EmailLoginPage emailLoginPage = homePage.clickLoginBtn().clickForgottenPasswordLink().enterEmailAndSubmit(username).checkConfirmationMsg();
-        //emailLoginPage.openEmailLoginPage(emailUrl).loginToEmail(email, password);
     }
 }
 
