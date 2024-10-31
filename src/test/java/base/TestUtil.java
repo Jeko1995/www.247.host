@@ -26,7 +26,6 @@ public class TestUtil extends DataProviders {
     private String browser, targetURL;
     public String emailUrl;
 
-
     // Elements
     @FindBy(className= "phpdebugbar-close-btn")
     private WebElement phpDebugBarCloseBtn;
@@ -46,7 +45,7 @@ public class TestUtil extends DataProviders {
     }
 
     // Method to close the WebDriver after each test method.
-    //@AfterMethod
+    @AfterMethod
     public void tearDown() {
         if (driver != null) {
             driver.quit();
@@ -63,7 +62,7 @@ public class TestUtil extends DataProviders {
             targetURL = properties.getProperty("url");
             browser = properties.getProperty("browser");
             emailUrl = properties.getProperty("email");
-            } catch (IOException e) {
+        } catch (IOException e) {
             System.out.println(e);
         }
     }
