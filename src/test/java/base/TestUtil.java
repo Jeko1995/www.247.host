@@ -20,6 +20,8 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import static jdk.xml.internal.SecuritySupport.readConfig;
+
 public class TestUtil extends DataProviders {
     public WebDriver driver;
 
@@ -33,15 +35,21 @@ public class TestUtil extends DataProviders {
     // Method to set up the WebDriver and open the target URL before each test method.
     @BeforeMethod
     public void setupDriverAndOpenTargetURL() {
-        readConfig("src/test/resources/config.properties");
-        setupDriver();
-        driver.manage().window().maximize();
-        driver.get(targetURL);
+        try {
+            readConfig("src/test/resources/config.properties");
+            setupDriver();
+            driver.manage().window().maximize();
+            driver.get(targetURL);
 
-        PageFactory.initElements(driver, this); // Initialize the elements
+            PageFactory.initElements(driver, this); // Initialize the elements
 
-        setupCookie();
-        closePhpDebugBar();
+            setupCookie();
+            closePhpDebugBar();
+        } catch (Exception e) {
+            System.out.println("An error occurred during setup: " + e.getMessage());
+        } finally {
+            tearDown();
+        }
     }
 
     // Method to close the WebDriver after each test method.
