@@ -20,8 +20,6 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
-import static jdk.xml.internal.SecuritySupport.readConfig;
-
 public class TestUtil extends DataProviders {
     public WebDriver driver;
 
@@ -46,9 +44,9 @@ public class TestUtil extends DataProviders {
             setupCookie();
             closePhpDebugBar();
         } catch (Exception e) {
-            System.out.println("An error occurred during setup: " + e.getMessage());
-        } finally {
+            System.out.println("An error occurred during setup of the driver: " + e.getMessage());
             tearDown();
+            throw e;
         }
     }
 
@@ -108,9 +106,13 @@ public class TestUtil extends DataProviders {
     }
 
     // Method for closing debug bar
-    private void closePhpDebugBar(){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-        phpDebugBarCloseBtn = wait.until(ExpectedConditions.elementToBeClickable(phpDebugBarCloseBtn));
-        phpDebugBarCloseBtn.click();
+    private void closePhpDebugBar() {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(1500));
+            phpDebugBarCloseBtn = wait.until(ExpectedConditions.elementToBeClickable(phpDebugBarCloseBtn));
+            phpDebugBarCloseBtn.click();
+       } catch (Exception e) {
+            System.out.println("PHP Debug Bar close button not found, continuing without closing it.");
+       }
     }
 }

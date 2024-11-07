@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Updating POM.xml dependency's">
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Make changes that close browser when there is a problem with BeforeMethod">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,23 +54,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.CheckResetPassBackBtn20.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginWithInvalidCredentials18.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginWithValidCredentials17.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Zhelyazko/IdeaProjects/www.247.host/src/test/java/tests/login&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.CheckResetPassBackBtn20.executor": "Run",
+    "TestNG.LoginWithInvalidCredentials18.executor": "Run",
+    "TestNG.LoginWithValidCredentials17.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Zhelyazko/IdeaProjects/www.247.host/src/test/java/tests/login",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "inlay.hints"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Zhelyazko\IdeaProjects\www.247.host\src\test\suites" />
@@ -85,6 +87,24 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckResetPassBackBtn20.checkResetPassBackBtn20" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="www.247.host" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.login" />
+      <option name="MAIN_CLASS_NAME" value="tests.login.CheckResetPassBackBtn20" />
+      <option name="METHOD_NAME" value="checkResetPassBackBtn20" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -164,12 +184,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="TestNG.CheckResetPassBackBtn20.checkResetPassBackBtn20" />
       <item itemvalue="TestNG.LoginWithValidCredentials17" />
       <item itemvalue="TestNG.LoginWithCorrectCredentials17" />
       <item itemvalue="TestNG.LoginWithInvalidCredentials18" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CheckResetPassBackBtn20.checkResetPassBackBtn20" />
         <item itemvalue="Application.Main" />
         <item itemvalue="TestNG.LoginWithCorrectCredentials17" />
         <item itemvalue="TestNG.LoginWithInvalidCredentials18" />
@@ -313,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729177176301</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="- Make changes that close browser when there is a problem with BeforeMethod">
+      <option name="closed" value="true" />
+      <created>1730990716867</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1730990716867</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -332,6 +362,7 @@
     <MESSAGE value="- Adding methods for handling cookies and close debug bar. Using this methods in @BeforeMethod to apply changes for all tests" />
     <MESSAGE value="- Start building EmailInboxesTest with email testing" />
     <MESSAGE value="- Clean up the code and delete unnecessary email testing code" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Clean up the code and delete unnecessary email testing code" />
+    <MESSAGE value="- Make changes that close browser when there is a problem with BeforeMethod" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Make changes that close browser when there is a problem with BeforeMethod" />
   </component>
 </project>
