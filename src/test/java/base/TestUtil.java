@@ -77,7 +77,9 @@ public class TestUtil extends DataProviders {
     private void setupDriver() {
         if (driver == null) {
             switch (browser) {
-                case "firefox" -> driver = setupFireFoxDriver();
+                case "firefox", "mozilla", "mozilla firefox", "Mozilla firefox", "Mozilla Firefox", "Mozilla", "Firefox"
+                        -> driver = setupFireFoxDriver();
+
                 default -> driver = setupChromeDriver();
             }
         }
@@ -108,7 +110,7 @@ public class TestUtil extends DataProviders {
     // Method for closing debug bar
     private void closePhpDebugBar() {
         try {
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(1500));
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofMillis(1000));
             phpDebugBarCloseBtn = wait.until(ExpectedConditions.elementToBeClickable(phpDebugBarCloseBtn));
             phpDebugBarCloseBtn.click();
        } catch (Exception e) {

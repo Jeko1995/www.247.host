@@ -18,7 +18,7 @@ public class UserPanelPage extends BasePage{
     }
 
     // Elements
-    @FindBy(xpath = "(//a[@class='logged-user mr-3 d-flex align-items-center'])[2]")
+    @FindBy(xpath = "(//a[@class='mr-3 logged-user d-flex align-items-center'])[2]")
     private WebElement loggedUserNameAndIconBtn;
 
     // Methods i.e. actions on the page
@@ -28,11 +28,11 @@ public class UserPanelPage extends BasePage{
 
         try {
             wait.until(ExpectedConditions.visibilityOf(loggedUserNameAndIconBtn));
-
             return true;
+
         } catch (Exception e) {
             // If element is not visible, return false and custom error message
-            System.out.println("Error: Element is not found on this page!");
+            System.out.println("Error: Element loggedUserNameAndIconBtn is not found on UserPanelPage!");
             return false;
         }
     }

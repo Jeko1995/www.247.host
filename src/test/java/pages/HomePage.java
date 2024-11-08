@@ -24,7 +24,7 @@ public class HomePage extends BasePage{
     // Methods i.e. actions on the page
     // This method click on the login button
     public LoginPage clickLoginBtn() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
         loginBtn = wait.until(ExpectedConditions.elementToBeClickable(loginBtn));
         loginBtn.click();
 
