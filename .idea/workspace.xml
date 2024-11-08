@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Changing tearDown of the BeforeMethod to work better. &#10;- Adding exeption handling to the clickLoginBtn in HomePage class&#10;- Make closePhpDebugBar in TestUtil to not fail test if there is no btn found">
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Fixing locator to make sure all test works fine&#10;- Adding new case for mozilla firefox setup driver option">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/UserPanelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/UserPanelPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -353,7 +351,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731003984165</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="- Fixing locator to make sure all test works fine&#10;- Adding new case for mozilla firefox setup driver option">
+      <option name="closed" value="true" />
+      <created>1731087393914</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1731087393914</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -374,17 +380,7 @@
     <MESSAGE value="- Clean up the code and delete unnecessary email testing code" />
     <MESSAGE value="- Make changes that close browser when there is a problem with BeforeMethod" />
     <MESSAGE value="- Changing tearDown of the BeforeMethod to work better. &#10;- Adding exeption handling to the clickLoginBtn in HomePage class&#10;- Make closePhpDebugBar in TestUtil to not fail test if there is no btn found" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Changing tearDown of the BeforeMethod to work better. &#10;- Adding exeption handling to the clickLoginBtn in HomePage class&#10;- Make closePhpDebugBar in TestUtil to not fail test if there is no btn found" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/base/TestUtil.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="- Fixing locator to make sure all test works fine&#10;- Adding new case for mozilla firefox setup driver option" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Fixing locator to make sure all test works fine&#10;- Adding new case for mozilla firefox setup driver option" />
   </component>
 </project>

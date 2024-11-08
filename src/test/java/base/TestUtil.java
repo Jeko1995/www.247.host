@@ -98,7 +98,7 @@ public class TestUtil extends DataProviders {
     private WebDriver setupFireFoxDriver() {
         WebDriverManager.firefoxdriver().setup();
         FirefoxOptions options = new FirefoxOptions();
-        options.addArguments("-private");
+        options.addArguments("-private-window");
         return driver = new FirefoxDriver(options);
     }
 
