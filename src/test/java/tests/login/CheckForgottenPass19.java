@@ -9,8 +9,8 @@ import pages.ResetPasswordPage;
 public class CheckForgottenPass19 extends TestUtil {
 
     //This test check is option for forgotten password works correctly
-    @Test(dataProvider = "getEmailAndEmailLoginCredentials")
-    public void checkForgottenPass19( String username, String email, String password) {
+    @Test(dataProvider = "getEmail")
+    public void checkForgottenPass19( String username) {
 
         // Go to the reset password page and check is option for forgotten password works correctly
         HomePage homePage = new HomePage(driver);
