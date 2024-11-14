@@ -6,7 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import pages.Email.EmailLoginPage;
 
 import java.time.Duration;
 
@@ -52,16 +51,17 @@ public class ResetPasswordPage extends BasePage{
     }
 
     //This method check that confirmation message for reset password is displayed
-    public EmailLoginPage checkConfirmationMsg(){
+    public boolean checkConfirmationMsg(){
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 
         try {
             wait.until(ExpectedConditions.visibilityOf(sendMailSuccessMsg));
 
+            return true;
         }catch (Exception e) {
             // If element is not visible, throw AssertionError
-            throw new AssertionError("Error: Element is not found on this page!", e);
+            System.out.println("Error: Message for successful send email is not found on reset password page!");
+            return false;
         }
-        return new EmailLoginPage(driver);
     }
 }

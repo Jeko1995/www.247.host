@@ -89,7 +89,6 @@ public class TestUtil extends DataProviders {
     private WebDriver setupChromeDriver() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--incognito");
         options.addArguments("start-maximized");
         return driver = new ChromeDriver(options);
     }
@@ -97,9 +96,7 @@ public class TestUtil extends DataProviders {
     // Method to set up the FirefoxDriver.
     private WebDriver setupFireFoxDriver() {
         WebDriverManager.firefoxdriver().setup();
-        FirefoxOptions options = new FirefoxOptions();
-        options.addArguments("-private-window");
-        return driver = new FirefoxDriver(options);
+        return driver = new FirefoxDriver();
     }
 
     // Method to accept cookies

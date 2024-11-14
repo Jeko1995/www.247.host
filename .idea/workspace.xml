@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Fixing locator to make sure all test works fine&#10;- Adding new case for mozilla firefox setup driver option">
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="Continue working on test for forgotten password, now I can login to mail after sending request">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ResetPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ResetPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/CheckForgottenPass19.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/CheckForgottenPass19.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/CheckResetPassBackBtn20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/CheckResetPassBackBtn20.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithCorrectCredentials17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithCorrectCredentials17.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/suites/allTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/suites/allTests.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,24 +58,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.CheckResetPassBackBtn20.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginWithInvalidCredentials18.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginWithValidCredentials17.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Zhelyazko/IdeaProjects/www.247.host/src/test/java/tests/login&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.C:/Users/user/IdeaProjects/www.247.host/src/test/suites/allTests.xml.executor": "Run",
+    "TestNG.CheckForgottenPass19.executor": "Run",
+    "TestNG.CheckResetPassBackBtn20.executor": "Run",
+    "TestNG.LoginWithCorrectCredentials17.executor": "Run",
+    "TestNG.LoginWithInvalidCredentials18.executor": "Run",
+    "TestNG.LoginWithValidCredentials17.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Zhelyazko/IdeaProjects/www.247.host/src/test/java/tests/login",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "inlay.hints"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Zhelyazko\IdeaProjects\www.247.host\src\test\suites" />
@@ -343,23 +350,7 @@
       <option name="project" value="LOCAL" />
       <updated>1730990716867</updated>
     </task>
-    <task id="LOCAL-00017" summary="- Changing tearDown of the BeforeMethod to work better. &#10;- Adding exeption handling to the clickLoginBtn in HomePage class&#10;- Make closePhpDebugBar in TestUtil to not fail test if there is no btn found">
-      <option name="closed" value="true" />
-      <created>1731003984165</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1731003984165</updated>
-    </task>
-    <task id="LOCAL-00018" summary="- Fixing locator to make sure all test works fine&#10;- Adding new case for mozilla firefox setup driver option">
-      <option name="closed" value="true" />
-      <created>1731087393914</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1731087393914</updated>
-    </task>
-    <option name="localTasksCounter" value="19" />
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -379,8 +370,6 @@
     <MESSAGE value="- Start building EmailInboxesTest with email testing" />
     <MESSAGE value="- Clean up the code and delete unnecessary email testing code" />
     <MESSAGE value="- Make changes that close browser when there is a problem with BeforeMethod" />
-    <MESSAGE value="- Changing tearDown of the BeforeMethod to work better. &#10;- Adding exeption handling to the clickLoginBtn in HomePage class&#10;- Make closePhpDebugBar in TestUtil to not fail test if there is no btn found" />
-    <MESSAGE value="- Fixing locator to make sure all test works fine&#10;- Adding new case for mozilla firefox setup driver option" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Fixing locator to make sure all test works fine&#10;- Adding new case for mozilla firefox setup driver option" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Make changes that close browser when there is a problem with BeforeMethod" />
   </component>
 </project>

@@ -15,8 +15,7 @@ public class CheckResetPassBackBtn20 extends TestUtil {
 
        // Go to the reset password page and click back button
        HomePage homePage = new HomePage(driver);
-       ResetPasswordPage resetPasswordPage = homePage.clickLoginBtn().clickForgottenPasswordLink();
-       LoginPage loginPage = resetPasswordPage.clickBackBtn();
+       LoginPage loginPage = homePage.clickLoginBtn().clickForgottenPasswordLink().clickBackBtn();
 
         // Assert that back button is working
        Assert.assertTrue(loginPage.isAt());
