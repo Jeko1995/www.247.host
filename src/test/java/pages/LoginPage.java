@@ -33,6 +33,9 @@ public class LoginPage extends BasePage{
     @FindBy(className = "forgotten-password-link-2")
     private WebElement forgottenPasswordLink;
 
+    @FindBy(xpath = "(//span[text()='Create new account']")
+    private WebElement createNewAccountBtn;
+
     // Methods i.e. actions on the page
     // This method fill in email and password field and click login button
     public UserPanelPage enterUserDataAndLogin(String username, String password) {
