@@ -47,6 +47,10 @@ public class RegistrationPage extends BasePage{
     @FindBy(className = ".btn-register")
     private WebElement registerBtn;
 
+    @FindBy(xpath = "//*[text()='The full name field is required.'" +
+            " or text()='Полето за име и фамилия е задължително.']")
+    private WebElement fullNameFieldErrorMsg;
+
     // Methods i.e. actions on the page
 
 }

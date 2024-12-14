@@ -33,7 +33,7 @@ public class LoginPage extends BasePage{
     @FindBy(className = "forgotten-password-link-2")
     private WebElement forgottenPasswordLink;
 
-    @FindBy(xpath = "(//span[text()='Create new account']")
+    @FindBy(xpath = "(//span[text()='Create new account' or text()='Създай нов акаунт']")
     private WebElement createNewAccountBtn;
 
     // Methods i.e. actions on the page

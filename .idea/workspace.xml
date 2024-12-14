@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Remove email testing code">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" afterDir="false" />
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Create RegistrationPage and add elements&#10;- Add create new account element in LoginPage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -353,7 +354,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731623334040</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="- Create RegistrationPage and add elements&#10;- Add create new account element in LoginPage">
+      <option name="closed" value="true" />
+      <created>1733153852520</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1733153852521</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -385,6 +394,7 @@
     <MESSAGE value="- Clean up the code and delete unnecessary email testing code" />
     <MESSAGE value="- Make changes that close browser when there is a problem with BeforeMethod" />
     <MESSAGE value="- Remove email testing code" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Remove email testing code" />
+    <MESSAGE value="- Create RegistrationPage and add elements&#10;- Add create new account element in LoginPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Create RegistrationPage and add elements&#10;- Add create new account element in LoginPage" />
   </component>
 </project>
