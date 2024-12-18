@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Create RegistrationPage and add elements&#10;- Add create new account element in LoginPage">
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Find a way to find elements for both languages and add first error msg in RegistrationPage&#10;- Change createNewAccountBtn element in LoginPage for both languages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -362,7 +361,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733153852521</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="- Find a way to find elements for both languages and add first error msg in RegistrationPage&#10;- Change createNewAccountBtn element in LoginPage for both languages">
+      <option name="closed" value="true" />
+      <created>1734220351946</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1734220351947</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -395,6 +402,7 @@
     <MESSAGE value="- Make changes that close browser when there is a problem with BeforeMethod" />
     <MESSAGE value="- Remove email testing code" />
     <MESSAGE value="- Create RegistrationPage and add elements&#10;- Add create new account element in LoginPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Create RegistrationPage and add elements&#10;- Add create new account element in LoginPage" />
+    <MESSAGE value="- Find a way to find elements for both languages and add first error msg in RegistrationPage&#10;- Change createNewAccountBtn element in LoginPage for both languages" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Find a way to find elements for both languages and add first error msg in RegistrationPage&#10;- Change createNewAccountBtn element in LoginPage for both languages" />
   </component>
 </project>
