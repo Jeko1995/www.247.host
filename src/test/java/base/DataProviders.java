@@ -11,7 +11,7 @@ import java.util.List;
 
 public class DataProviders {
 
-    //Data provider for valid login credentials.
+    //Data provider for correct login credentials.
     @DataProvider(name = "correctLoginCredentials")
     public Object[][] readCorrectLoginCredentials() {
         try {
@@ -66,7 +66,7 @@ public class DataProviders {
         }
     }
 
-    //Data provider for getting correct login credentials of the user.
+    //Data provider for getting correct email credentials of the user.
     @DataProvider(name = "getEmail")
     public Object[][] readCorrectEmails() {
         try {
@@ -84,6 +84,34 @@ public class DataProviders {
 
             for (int i = 0; i < validRows.size(); i++) {
                 csvDataObj[i][0] = validRows.get(i)[0].trim();
+            }
+
+            return csvDataObj;
+
+        } catch (IOException | CsvException e) {
+            System.out.println(e);
+            return null;
+        }
+    }
+
+    //Data provider for invalid registration credentials.
+    @DataProvider(name = "invalidRegistrationCredentials")
+    public Object[][] readInvalidRegistrationCredentials() {
+        try {
+            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/invalidRegistrationCredentials.csv"));
+            List<String[]> csvData = csvReader.readAll();
+            List<String[]> validRows = new ArrayList<>();
+
+            for (String[] row : csvData) {
+                if (!row[0].startsWith("//")) {
+                    validRows.add(row);
+                }
+            }
+
+            Object[][] csvDataObj = new Object[validRows.size()][9];
+
+            for (int i = 0; i < validRows.size(); i++) {
+                csvDataObj[i] = validRows.get(i);
             }
 
             return csvDataObj;

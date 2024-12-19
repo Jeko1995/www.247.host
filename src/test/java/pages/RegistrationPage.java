@@ -107,5 +107,22 @@ public class RegistrationPage extends BasePage{
     private WebElement termsCheckboxAllErrorMsg;
 
     // Methods i.e. actions on the page
+    // This method fill in all fields in registration page and click register button
+    public RegistrationPage enterRegistrationDataAndSubmit(String firstAndLastName, String email, String password,
+                                                           String confirmationPassword, String city, String address,
+                                                           String postCode, String phone) {
 
+        enterData(firstAndLastNameInput, firstAndLastName);
+        enterData(emailInput, email);
+        enterData(passwordInput, password);
+        enterData(confirmationPasswordInput, confirmationPassword);
+        enterData(cityInput, city);
+        enterData(addressInput, address);
+        enterData(postCodeInput, postCode);
+        enterData(phoneInput, phone);
+
+        js.executeScript("arguments[0].scrollIntoView();",registerBtn);
+        registerBtn.click();
+        return this;
+    }
 }

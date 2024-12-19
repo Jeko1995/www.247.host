@@ -40,13 +40,8 @@ public class LoginPage extends BasePage{
     // This method fill in email and password field and click login button
     public UserPanelPage enterUserDataAndLogin(String username, String password) {
 
-        emailInput.click();
-        emailInput.clear();
-        emailInput.sendKeys(username);
-
-        passwordInput.click();
-        passwordInput.clear();
-        passwordInput.sendKeys(password);
+        enterData(emailInput, username);
+        enterData(passwordInput, password);
 
         js.executeScript("arguments[0].scrollIntoView();",loginBtn);
         loginBtn.click();

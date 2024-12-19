@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Find a way to find elements for both languages and add first error msg in RegistrationPage&#10;- Change createNewAccountBtn element in LoginPage for both languages">
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Add all error messages locators in RegistrationPage">
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/registration/RegistrationPageFieldsValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/invalidRegistrationCredentials.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ResetPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ResetPasswordPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +86,7 @@
       <recent name="C:\Users\Zhelyazko\IdeaProjects\www.247.host\src\test\suites" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="www.247.host" />
@@ -369,7 +376,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734220351947</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="- Add all error messages locators in RegistrationPage">
+      <option name="closed" value="true" />
+      <created>1734540845817</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1734540845817</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -403,6 +418,7 @@
     <MESSAGE value="- Remove email testing code" />
     <MESSAGE value="- Create RegistrationPage and add elements&#10;- Add create new account element in LoginPage" />
     <MESSAGE value="- Find a way to find elements for both languages and add first error msg in RegistrationPage&#10;- Change createNewAccountBtn element in LoginPage for both languages" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Find a way to find elements for both languages and add first error msg in RegistrationPage&#10;- Change createNewAccountBtn element in LoginPage for both languages" />
+    <MESSAGE value="- Add all error messages locators in RegistrationPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Add all error messages locators in RegistrationPage" />
   </component>
 </project>

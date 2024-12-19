@@ -41,9 +41,7 @@ public class ResetPasswordPage extends BasePage{
     //This method fill in email field and submit the form
     public ResetPasswordPage enterEmailAndSubmit(String username) {
 
-        resetPassEmailInput.click();
-        resetPassEmailInput.clear();
-        resetPassEmailInput.sendKeys(username);
+        enterData(resetPassEmailInput, username);
 
         js.executeScript("arguments[0].scrollIntoView();",resetPassSubmitBtn);
         resetPassSubmitBtn.click();
