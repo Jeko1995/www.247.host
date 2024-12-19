@@ -17,6 +17,8 @@ public class BasePage {
 
     //This method enters data into the fields
     protected void enterData(WebElement element, String value) {
+        js.executeScript("arguments[0].scrollIntoView();",element);
+
         element.click();
         element.clear();
         element.sendKeys(value);

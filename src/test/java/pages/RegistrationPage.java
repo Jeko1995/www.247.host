@@ -1,9 +1,14 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class RegistrationPage extends BasePage{
 
@@ -124,5 +129,28 @@ public class RegistrationPage extends BasePage{
         js.executeScript("arguments[0].scrollIntoView();",registerBtn);
         registerBtn.click();
         return this;
+    }
+
+    //This method check if all error messages are visible on the page
+    public boolean checkAllFieldsValidations() {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+
+        WebElement[] allErrorMsg = { fullNameFieldAllErrorMsg, emailFieldAllErrorMsg, passwordFieldAllErrorMsg,
+                confirmationPasswordFieldAllErrorMsg, countryDropdownAllErrorMsg, cityFieldAllErrorMsg,
+                addressFieldAllErrorMsg, postCodeFieldAllErrorMsg, phoneFieldAllErrorMsg, termsCheckboxAllErrorMsg };
+
+        try {
+            for (WebElement errorMsg : allErrorMsg) {
+                if (!errorMsg.isDisplayed()) {
+                    js.executeScript("arguments[0].scrollIntoView();", errorMsg);
+                }
+
+                wait.until(ExpectedConditions.visibilityOf(errorMsg));
+            }
+            return true;
+        } catch (Exception e) {
+            System.out.println("Error: Error message is not visible on this page!" + e.getMessage());
+            return false;
+        }
     }
 }

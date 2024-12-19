@@ -57,7 +57,6 @@ public class LoginPage extends BasePage{
 
             return true;
         }catch (Exception e){
-            // If element is not visible, return false and custom error message
             System.out.println("Error: Element is not found on this page!");
             return false;
         }

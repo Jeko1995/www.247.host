@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- remove unused statements" />
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- rename CheckResetPassBackBtn20.java to CheckForgottenPassBackBtn20.java">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,7 +81,7 @@
       <recent name="C:\Users\Zhelyazko\IdeaProjects\www.247.host\src\test\suites" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="www.247.host" />
@@ -183,10 +188,10 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
+      <item itemvalue="TestNG.CheckForgottenPassBackBtn20.checkForgottenPassBackBtn20" />
       <item itemvalue="TestNG.LoginWithValidCredentials17" />
       <item itemvalue="TestNG.LoginWithCorrectCredentials17" />
       <item itemvalue="TestNG.LoginWithInvalidCredentials18" />
-      <item itemvalue="TestNG.CheckForgottenPassBackBtn20.checkForgottenPassBackBtn20" />
     </list>
     <recent_temporary>
       <list>
@@ -390,7 +395,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734571783891</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="- rename CheckResetPassBackBtn20.java to CheckForgottenPassBackBtn20.java">
+      <option name="closed" value="true" />
+      <created>1734572313522</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1734572313522</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -427,6 +440,7 @@
     <MESSAGE value="- Add all error messages locators in RegistrationPage" />
     <MESSAGE value="- create enterData method and enterRegistrationDataAndSubmit method&#10;- update LoginPage.java and ResetPasswordPage.java with enterData method&#10;- create invalidRegistrationCredentials.csv and data provider for it&#10;- create RegistrationPageFieldsValidation.java" />
     <MESSAGE value="- remove unused statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="- remove unused statements" />
+    <MESSAGE value="- rename CheckResetPassBackBtn20.java to CheckForgottenPassBackBtn20.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="- rename CheckResetPassBackBtn20.java to CheckForgottenPassBackBtn20.java" />
   </component>
 </project>
