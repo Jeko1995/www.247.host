@@ -4,7 +4,6 @@ import base.TestUtil;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
-import pages.LoginPage;
 import pages.UserPanelPage;
 
 public class LoginWithCorrectCredentials17 extends TestUtil {
