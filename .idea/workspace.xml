@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Add all error messages locators in RegistrationPage">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/registration/RegistrationPageFieldsValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/invalidRegistrationCredentials.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ResetPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ResetPasswordPage.java" afterDir="false" />
-    </list>
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- remove unused statements" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,7 +90,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckResetPassBackBtn20.checkResetPassBackBtn20" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CheckForgottenPassBackBtn20.checkForgottenPassBackBtn20" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="www.247.host" />
       <extension name="coverage">
         <pattern>
@@ -109,8 +99,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests.login" />
-      <option name="MAIN_CLASS_NAME" value="tests.login.CheckResetPassBackBtn20" />
-      <option name="METHOD_NAME" value="checkResetPassBackBtn20" />
+      <option name="MAIN_CLASS_NAME" value="tests.login.CheckForgottenPassBackBtn20" />
+      <option name="METHOD_NAME" value="checkForgottenPassBackBtn20" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -193,15 +183,15 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main" />
-      <item itemvalue="TestNG.CheckResetPassBackBtn20.checkResetPassBackBtn20" />
       <item itemvalue="TestNG.LoginWithValidCredentials17" />
       <item itemvalue="TestNG.LoginWithCorrectCredentials17" />
       <item itemvalue="TestNG.LoginWithInvalidCredentials18" />
+      <item itemvalue="TestNG.CheckForgottenPassBackBtn20.checkForgottenPassBackBtn20" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="TestNG.CheckResetPassBackBtn20.checkResetPassBackBtn20" />
+        <item itemvalue="TestNG.CheckForgottenPassBackBtn20.checkForgottenPassBackBtn20" />
         <item itemvalue="TestNG.LoginWithCorrectCredentials17" />
         <item itemvalue="TestNG.LoginWithInvalidCredentials18" />
         <item itemvalue="TestNG.LoginWithCorrectCredentials17" />
@@ -384,7 +374,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734540845817</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="- create enterData method and enterRegistrationDataAndSubmit method&#10;- update LoginPage.java and ResetPasswordPage.java with enterData method&#10;- create invalidRegistrationCredentials.csv and data provider for it&#10;- create RegistrationPageFieldsValidation.java">
+      <option name="closed" value="true" />
+      <created>1734571589488</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1734571589488</updated>
+    </task>
+    <task id="LOCAL-00022" summary="- remove unused statements">
+      <option name="closed" value="true" />
+      <created>1734571783891</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1734571783891</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -419,6 +425,8 @@
     <MESSAGE value="- Create RegistrationPage and add elements&#10;- Add create new account element in LoginPage" />
     <MESSAGE value="- Find a way to find elements for both languages and add first error msg in RegistrationPage&#10;- Change createNewAccountBtn element in LoginPage for both languages" />
     <MESSAGE value="- Add all error messages locators in RegistrationPage" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Add all error messages locators in RegistrationPage" />
+    <MESSAGE value="- create enterData method and enterRegistrationDataAndSubmit method&#10;- update LoginPage.java and ResetPasswordPage.java with enterData method&#10;- create invalidRegistrationCredentials.csv and data provider for it&#10;- create RegistrationPageFieldsValidation.java" />
+    <MESSAGE value="- remove unused statements" />
+    <option name="LAST_COMMIT_MESSAGE" value="- remove unused statements" />
   </component>
 </project>
