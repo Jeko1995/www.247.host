@@ -32,7 +32,7 @@ public class UserPanelPage extends BasePage{
 
         } catch (Exception e) {
             // If element is not visible, return false and custom error message
-            System.out.println("Error: Element loggedUserNameAndIconBtn is not found on UserPanelPage!");
+            System.out.println("Error: Element loggedUserNameAndIconBtn is not found on UserPanelPage!" + e.getMessage());
             return false;
         }
     }

@@ -1,6 +1,5 @@
 package pages;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -49,7 +48,7 @@ public class RegistrationPage extends BasePage{
     @FindBy(css= "[name=\"terms\"]")
     private WebElement termsCheckbox;
 
-    @FindBy(className = ".btn-register")
+    @FindBy(className = "btn-register")
     private WebElement registerBtn;
 
     @FindBy(xpath = "//*[text()='The full name field is required.'" +
@@ -127,6 +126,9 @@ public class RegistrationPage extends BasePage{
         enterData(phoneInput, phone);
 
         js.executeScript("arguments[0].scrollIntoView();",registerBtn);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+        wait.until(ExpectedConditions.visibilityOf(registerBtn));
+
         registerBtn.click();
         return this;
     }

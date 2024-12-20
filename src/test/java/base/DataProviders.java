@@ -13,7 +13,7 @@ public class DataProviders {
 
     //Data provider for correct login credentials.
     @DataProvider(name = "correctLoginCredentials")
-    public Object[][] readCorrectLoginCredentials() {
+    public Object[][] readCorrectLoginCredentials() throws IOException, CsvException {
         try {
             CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctLoginCredentials.csv"));
             List<String[]> csvData = csvReader.readAll();
@@ -34,14 +34,13 @@ public class DataProviders {
             return csvDataObj;
 
         } catch (IOException | CsvException e) {
-            System.out.println(e);
-            return null;
+            throw (e);
         }
     }
 
     //Data provider for invalid login credentials.
     @DataProvider(name = "invalidLoginCredentials")
-    public Object[][] readInvalidLoginCredentials() {
+    public Object[][] readInvalidLoginCredentials() throws IOException, CsvException {
         try {
             CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/invalidLoginCredentials.csv"));
             List<String[]> csvData = csvReader.readAll();
@@ -61,14 +60,13 @@ public class DataProviders {
             return csvDataObj;
 
         } catch (IOException | CsvException e) {
-            System.out.println(e);
-            return null;
+            throw (e);
         }
     }
 
     //Data provider for getting correct email credentials of the user.
     @DataProvider(name = "getEmail")
-    public Object[][] readCorrectEmails() {
+    public Object[][] readCorrectEmails() throws IOException, CsvException {
         try {
             CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctLoginCredentials.csv"));
             List<String[]> csvData = csvReader.readAll();
@@ -89,14 +87,13 @@ public class DataProviders {
             return csvDataObj;
 
         } catch (IOException | CsvException e) {
-            System.out.println(e);
-            return null;
+            throw (e);
         }
     }
 
     //Data provider for invalid registration credentials.
     @DataProvider(name = "invalidRegistrationCredentials")
-    public Object[][] readInvalidRegistrationCredentials() {
+    public Object[][] readInvalidRegistrationCredentials() throws IOException, CsvException {
         try {
             CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/invalidRegistrationCredentials.csv"));
             List<String[]> csvData = csvReader.readAll();
@@ -108,7 +105,7 @@ public class DataProviders {
                 }
             }
 
-            Object[][] csvDataObj = new Object[validRows.size()][9];
+            Object[][] csvDataObj = new Object[validRows.size()][8];
 
             for (int i = 0; i < validRows.size(); i++) {
                 csvDataObj[i] = validRows.get(i);
@@ -117,8 +114,7 @@ public class DataProviders {
             return csvDataObj;
 
         } catch (IOException | CsvException e) {
-            System.out.println(e);
-            return null;
+            throw (e);
         }
     }
 }

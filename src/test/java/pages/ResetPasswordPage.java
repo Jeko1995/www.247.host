@@ -58,7 +58,7 @@ public class ResetPasswordPage extends BasePage{
             return true;
         }catch (Exception e) {
             // If element is not visible, throw AssertionError
-            System.out.println("Error: Message for successful send email is not found on reset password page!");
+            System.out.println("Error: Message for successful send email is not found on reset password page!" + e.getMessage());
             return false;
         }
     }

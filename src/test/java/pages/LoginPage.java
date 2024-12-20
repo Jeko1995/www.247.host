@@ -33,7 +33,7 @@ public class LoginPage extends BasePage{
     @FindBy(className = "forgotten-password-link-2")
     private WebElement forgottenPasswordLink;
 
-    @FindBy(xpath = "(//span[text()='Create new account' or text()='Създай нов акаунт']")
+    @FindBy(xpath = "//span[text()='Create new account' or text()='Създай нов акаунт']")
     private WebElement createNewAccountBtn;
 
     // Methods i.e. actions on the page
@@ -57,7 +57,7 @@ public class LoginPage extends BasePage{
 
             return true;
         }catch (Exception e){
-            System.out.println("Error: Element is not found on this page!");
+            System.out.println("Error: Element is not found on this page!" + e.getMessage());
             return false;
         }
     }
@@ -68,5 +68,12 @@ public class LoginPage extends BasePage{
         js.executeScript("arguments[0].scrollIntoView();",forgottenPasswordLink);
         forgottenPasswordLink.click();
         return new ResetPasswordPage(driver);
+    }
+
+    //This method click create new account button
+    public RegistrationPage clickCreateNewAccountBtn() {
+        js.executeScript("arguments[0].scrollIntoView();",createNewAccountBtn);
+        createNewAccountBtn.click();
+        return new RegistrationPage(driver);
     }
 }

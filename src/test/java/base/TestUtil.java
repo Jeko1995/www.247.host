@@ -1,20 +1,22 @@
 package base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.Cookie;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
@@ -25,6 +27,8 @@ public class TestUtil extends DataProviders {
 
     private String browser, targetURL;
     public String emailUrl;
+    public static final String TEST_RESOURCES_DIR = "src\\test\\resources\\";
+    public static final String SCREENSHOTS_DIR = TEST_RESOURCES_DIR.concat("screenshots\\");
 
     // Elements
     @FindBy(className= "phpdebugbar-close-btn")
@@ -32,9 +36,9 @@ public class TestUtil extends DataProviders {
 
     // Method to set up the WebDriver and open the target URL before each test method.
     @BeforeMethod
-    public void setupDriverAndOpenTargetURL() {
+    protected final void setupDriverAndOpenTargetURL() throws IOException {
         try {
-            readConfig("src/test/resources/config.properties");
+            readConfig();
             setupDriver();
             driver.manage().window().maximize();
             driver.get(targetURL);
@@ -50,8 +54,22 @@ public class TestUtil extends DataProviders {
         }
     }
 
-    // Method to close the WebDriver after each test method.
+    //This method delete all old screenshots before each test suite
+    @BeforeSuite
+    protected final void setupTestSuite() throws IOException {
+        cleanDirectory();
+    }
+
+    // Method to close the WebDriver and make screenshot after each test method.
     @AfterMethod
+    protected final void tearDownTest(ITestResult testResult) {
+        takeScreenshot(testResult);
+        if (this.driver != null) {
+            this.driver.quit();
+            this.driver = null;
+        }
+    }
+
     public void tearDown() {
         if (driver != null) {
             driver.quit();
@@ -60,16 +78,16 @@ public class TestUtil extends DataProviders {
     }
 
     // Method to read configuration properties from a file.
-    private void readConfig(String pathToFile) {
+    private void readConfig() throws IOException {
         try {
-            FileInputStream fileInputStream = new FileInputStream(pathToFile);
+            FileInputStream fileInputStream = new FileInputStream("src/test/resources/config.properties");
             Properties properties = new Properties();
             properties.load(fileInputStream);
             targetURL = properties.getProperty("url");
             browser = properties.getProperty("browser");
             emailUrl = properties.getProperty("email");
         } catch (IOException e) {
-            System.out.println(e);
+            throw (e);
         }
     }
 
@@ -113,5 +131,34 @@ public class TestUtil extends DataProviders {
        } catch (Exception e) {
             System.out.println("PHP Debug Bar close button not found, continuing without closing it.");
        }
+    }
+
+    //Takes a screenshot upon test failure
+    private void takeScreenshot(ITestResult testResult){
+        if(ITestResult.FAILURE == testResult.getStatus()){
+            try{
+                TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+                File screenshot = takesScreenshot.getScreenshotAs(OutputType.FILE);
+                String testName = testResult.getName() + "_" + System.currentTimeMillis();
+                FileUtils.copyFile(screenshot, new File(SCREENSHOTS_DIR.concat(testName).concat(".jpg")));
+            }catch (IOException e){
+                System.out.println("Unable to create screenshot file: " + e.getMessage());
+            }
+        }
+    }
+
+    //Cleans files in a directory provided as input parameter
+    private void cleanDirectory() throws IOException {
+        File directory = new File(TestUtil.SCREENSHOTS_DIR);
+
+        Assert.assertTrue(directory.isDirectory(), "Invalid directory!");
+
+        FileUtils.cleanDirectory(directory);
+        String[] fileList = directory.list();
+        if (fileList != null && fileList.length == 0) {
+            System.out.printf("All files are deleted in Directory: %s%n", TestUtil.SCREENSHOTS_DIR);
+        } else {
+            System.out.printf("Unable to delete the files in Directory:%s%n", TestUtil.SCREENSHOTS_DIR);
+        }
     }
 }
