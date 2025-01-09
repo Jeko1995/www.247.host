@@ -54,10 +54,15 @@ public class RegistrationPage extends BasePage{
     @FindBy(xpath = "//*[text()='The full name field is required.'" +
             " or text()='The full name must be at least 6 characters.'" +
             " or text()='The full name must not be greater than 255 characters.'" +
-            " or text()='The full name format is invalid.' or text()='Полето за име и фамилия е задължително.'" +
+            " or text()='The full name format is invalid.'" +
+            " or text()='The name must be at least 3 characters.' " +
+            " or text()='The last name must be at least 3 characters.'" +
+            " or text()='Полето за име и фамилия е задължително.'" +
             " or text()='Полето Име и фамилия трябва да бъде минимум 6 знака.'" +
             " or text()='Полето Име и фамилия трябва да бъде по-малко от 255 знака.'" +
-            " or text()='Полето Име и фамилия е в невалиден формат.']")
+            " or text()='Полето Име и фамилия е в невалиден формат.'" +
+            " or text()='Името трябва да съдържа поне 3 символа.'" +
+            " or text()='Фамилията трябва да съдържа поне 3 символа.'] ")
     private WebElement fullNameFieldAllErrorMsg;
 
     @FindBy(xpath = "//*[text()='Email field is required.'" +

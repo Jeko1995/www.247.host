@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Finish RegistrationPageFieldsValidation47.java. Edit data provider, csv file and method to read data entry.&#10;- Add RegistrationPageFieldsValidation47.java in test sute&#10;- Create new method to click create new account button in LoginPage.java&#10;- Add e.getMessage to exeptions in LoginPage.java, ResetPasswordPage.java and UserPanelPage.java&#10;- Change locators in LoginPage.java and RegistrationPage.java&#10;- Add wait then click registerBtn in RegistrationPage.java&#10;- Create methods to create screenshots when test fail and delete old screenshots">
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Remove reading email from config file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/invalidRegistrationCredentials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/invalidRegistrationCredentials.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +80,7 @@
       <recent name="C:\Users\Zhelyazko\IdeaProjects\www.247.host\src\test\suites" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="www.247.host" />
@@ -416,7 +418,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734721900254</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="- Remove reading email from config file">
+      <option name="closed" value="true" />
+      <created>1736418288243</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1736418288243</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -431,7 +441,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First commit with added dependency" />
     <MESSAGE value="Create basepage, homepage and loginpage, setup test util file" />
     <MESSAGE value="Continue working on successful login test. Still having problems with run test in chrome and to find correct locators" />
     <MESSAGE value="Adding correct locators" />
@@ -456,6 +465,7 @@
     <MESSAGE value="- rename CheckResetPassBackBtn20.java to CheckForgottenPassBackBtn20.java" />
     <MESSAGE value="- create checkAllFieldsValidations method" />
     <MESSAGE value="- Finish RegistrationPageFieldsValidation47.java. Edit data provider, csv file and method to read data entry.&#10;- Add RegistrationPageFieldsValidation47.java in test sute&#10;- Create new method to click create new account button in LoginPage.java&#10;- Add e.getMessage to exeptions in LoginPage.java, ResetPasswordPage.java and UserPanelPage.java&#10;- Change locators in LoginPage.java and RegistrationPage.java&#10;- Add wait then click registerBtn in RegistrationPage.java&#10;- Create methods to create screenshots when test fail and delete old screenshots" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Finish RegistrationPageFieldsValidation47.java. Edit data provider, csv file and method to read data entry.&#10;- Add RegistrationPageFieldsValidation47.java in test sute&#10;- Create new method to click create new account button in LoginPage.java&#10;- Add e.getMessage to exeptions in LoginPage.java, ResetPasswordPage.java and UserPanelPage.java&#10;- Change locators in LoginPage.java and RegistrationPage.java&#10;- Add wait then click registerBtn in RegistrationPage.java&#10;- Create methods to create screenshots when test fail and delete old screenshots" />
+    <MESSAGE value="- Remove reading email from config file" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Remove reading email from config file" />
   </component>
 </project>
