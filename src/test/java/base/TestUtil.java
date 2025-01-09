@@ -26,7 +26,6 @@ public class TestUtil extends DataProviders {
     public WebDriver driver;
 
     private String browser, targetURL;
-    public String emailUrl;
     public static final String TEST_RESOURCES_DIR = "src\\test\\resources\\";
     public static final String SCREENSHOTS_DIR = TEST_RESOURCES_DIR.concat("screenshots\\");
 
@@ -85,7 +84,6 @@ public class TestUtil extends DataProviders {
             properties.load(fileInputStream);
             targetURL = properties.getProperty("url");
             browser = properties.getProperty("browser");
-            emailUrl = properties.getProperty("email");
         } catch (IOException e) {
             throw (e);
         }

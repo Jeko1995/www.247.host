@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Finish RegistrationPageFieldsValidation47.java. Edit data provider, csv file and method to read data entry.&#10;- Add RegistrationPageFieldsValidation47.java in test sute&#10;- Create new method to click create new account button in LoginPage.java&#10;- Add e.getMessage to exeptions in LoginPage.java, ResetPasswordPage.java and UserPanelPage.java&#10;- Change locators in LoginPage.java and RegistrationPage.java&#10;- Add wait then click registerBtn in RegistrationPage.java&#10;- Create methods to create screenshots when test fail and delete old screenshots">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ResetPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ResetPasswordPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/UserPanelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/UserPanelPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/registration/RegistrationPageFieldsValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/registration/RegistrationPageFieldsValidation47.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/invalidRegistrationCredentials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/invalidRegistrationCredentials.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/suites/allTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/suites/allTests.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +78,7 @@
       <recent name="C:\Users\Zhelyazko\IdeaProjects\www.247.host\src\test\suites" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="www.247.host" />
@@ -417,7 +408,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734640925575</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="- Finish RegistrationPageFieldsValidation47.java. Edit data provider, csv file and method to read data entry.&#10;- Add RegistrationPageFieldsValidation47.java in test sute&#10;- Create new method to click create new account button in LoginPage.java&#10;- Add e.getMessage to exeptions in LoginPage.java, ResetPasswordPage.java and UserPanelPage.java&#10;- Change locators in LoginPage.java and RegistrationPage.java&#10;- Add wait then click registerBtn in RegistrationPage.java&#10;- Create methods to create screenshots when test fail and delete old screenshots">
+      <option name="closed" value="true" />
+      <created>1734721900254</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1734721900254</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
