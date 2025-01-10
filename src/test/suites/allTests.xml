@@ -11,7 +11,7 @@
     </test>
     <test name="registration">
         <classes>
-            <class name="tests.registration.RegistrationPageFieldsValidation47"/>
+            <class name="tests.registration.CheckRegistrationPageFieldsWithInvalidData47"/>
         </classes>
     </test>
 </suite>

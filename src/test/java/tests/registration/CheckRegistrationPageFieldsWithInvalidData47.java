@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.RegistrationPage;
 
-public class RegistrationPageFieldsValidation47 extends TestUtil {
+public class CheckRegistrationPageFieldsWithInvalidData47 extends TestUtil {
 
     // Test that check all fields negative validation on registration page
     @Test(dataProvider = "invalidRegistrationCredentials")
@@ -17,9 +17,10 @@ public class RegistrationPageFieldsValidation47 extends TestUtil {
         // Open registration page, enter data and submit form
         HomePage homePage = new HomePage(driver);
         RegistrationPage registrationPage = homePage.clickLoginBtn().clickCreateNewAccountBtn()
-                .enterRegistrationDataAndSubmit(firstAndLastName, email, password, confirmationPassword, city, address, postCode, phone);
+                .fillInInputFields(firstAndLastName, email, password, confirmationPassword, city, address, postCode, phone)
+                .submitRegistrationForm();
 
         // Assert that all error messages are displayed and user is not finish his registration
-        Assert.assertTrue(registrationPage.checkAllFieldsValidations());
+        Assert.assertTrue(registrationPage.checkAllFieldsErrorMsg());
     }
 }

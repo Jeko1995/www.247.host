@@ -115,11 +115,14 @@ public class RegistrationPage extends BasePage{
             " or text()='Полето за Общи Условия и Политика на Поверителност е задължително.']")
     private WebElement termsCheckboxAllErrorMsg;
 
+    @FindBy(css = ".select2-results__option.select2-results__option--highlighted\n")
+    private WebElement afghanistanFromCountryDropdown;
+
     // Methods i.e. actions on the page
-    // This method fill in all fields in registration page and click register button
-    public RegistrationPage enterRegistrationDataAndSubmit(String firstAndLastName, String email, String password,
-                                                           String confirmationPassword, String city, String address,
-                                                           String postCode, String phone) {
+    // This method fill in all input fields in registration page
+    public RegistrationPage fillInInputFields(String firstAndLastName, String email, String password,
+                                              String confirmationPassword, String city, String address,
+                                              String postCode, String phone) {
 
         enterData(firstAndLastNameInput, firstAndLastName);
         enterData(emailInput, email);
@@ -130,6 +133,12 @@ public class RegistrationPage extends BasePage{
         enterData(postCodeInput, postCode);
         enterData(phoneInput, phone);
 
+        return this;
+    }
+
+    // This method submit the registration form
+    public RegistrationPage submitRegistrationForm(){
+
         js.executeScript("arguments[0].scrollIntoView();",registerBtn);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
         wait.until(ExpectedConditions.visibilityOf(registerBtn));
@@ -139,7 +148,7 @@ public class RegistrationPage extends BasePage{
     }
 
     //This method check if all error messages are visible on the page
-    public boolean checkAllFieldsValidations() {
+    public boolean checkAllFieldsErrorMsg() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 
         WebElement[] allErrorMsg = { fullNameFieldAllErrorMsg, emailFieldAllErrorMsg, passwordFieldAllErrorMsg,
@@ -159,5 +168,33 @@ public class RegistrationPage extends BasePage{
             System.out.println("Error: Error message is not visible on this page!" + e.getMessage());
             return false;
         }
+    }
+
+    // This method fill in all fields in registration page
+    public RegistrationPage fillInAllRegistrationFields(String firstAndLastName, String email, String password,
+                                              String confirmationPassword, String city, String address,
+                                              String postCode, String phone) {
+
+        String currentDateTime = BasePage.getCurrentDateAndTime();
+
+        enterData(firstAndLastNameInput, firstAndLastName);
+        enterData(emailInput, email + "_" + currentDateTime + "@eurocoders.org");
+        enterData(passwordInput, password);
+        enterData(confirmationPasswordInput, confirmationPassword);
+        enterData(cityInput, city);
+        enterData(addressInput, address);
+        enterData(postCodeInput, postCode);
+        enterData(phoneInput, phone);
+
+        countryDropdown.click();
+        afghanistanFromCountryDropdown.click();
+        termsCheckbox.click();
+
+        return this;
+
+
+        // да пробвам дали ако използвам горния метод и тук само добавя имейла няма да изтрие вече въведения и да го въведе правилно
+
+
     }
 }

@@ -58,6 +58,12 @@
             <artifactId>mailslurp-client-java</artifactId>
             <version>15.19.22</version>
         </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>13.0</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 
