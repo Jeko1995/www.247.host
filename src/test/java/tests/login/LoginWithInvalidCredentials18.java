@@ -18,6 +18,6 @@ public class LoginWithInvalidCredentials18 extends TestUtil {
         loginPage.enterUserDataAndLogin(username, password);
 
         // Assert that the user is successfully logged in
-        Assert.assertTrue(loginPage.isAt());
+        Assert.assertTrue(loginPage.isAtLoginPage());
     }
 }

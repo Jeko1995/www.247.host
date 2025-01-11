@@ -17,6 +17,6 @@ public class CheckForgottenPassBackBtn20 extends TestUtil {
        LoginPage loginPage = homePage.clickLoginBtn().clickForgottenPasswordLink().clickBackBtn();
 
         // Assert that back button is working
-       Assert.assertTrue(loginPage.isAt());
+       Assert.assertTrue(loginPage.isAtLoginPage());
     }
 }

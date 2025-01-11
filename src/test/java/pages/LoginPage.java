@@ -49,7 +49,7 @@ public class LoginPage extends BasePage{
     }
 
     // Checks if the login error message is displayed
-    public boolean isAt() {
+    public boolean isAtLoginPage() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 
         try {

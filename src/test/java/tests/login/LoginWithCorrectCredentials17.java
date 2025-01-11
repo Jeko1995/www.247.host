@@ -17,6 +17,6 @@ public class LoginWithCorrectCredentials17 extends TestUtil {
         UserPanelPage userPanelPage = homePage.clickLoginBtn().enterUserDataAndLogin(username,password);
 
         // Assert that the user is successfully logged in.
-        Assert.assertTrue(userPanelPage.isAt());
+        Assert.assertTrue(userPanelPage.isAtUserPanelPage());
     }
 }

@@ -30,7 +30,7 @@ public class RegistrationPage extends BasePage{
     @FindBy(id = "password_confirmation")
     private WebElement confirmationPasswordInput;
 
-    @FindBy(className = ".select2-selection.select2-selection--single")
+    @FindBy(css = ".select2-selection.select2-selection--single")
     private WebElement countryDropdown;
 
     @FindBy(css= "[name=\"city\"]")
@@ -115,8 +115,8 @@ public class RegistrationPage extends BasePage{
             " or text()='Полето за Общи Условия и Политика на Поверителност е задължително.']")
     private WebElement termsCheckboxAllErrorMsg;
 
-    @FindBy(css = ".select2-results__option.select2-results__option--highlighted\n")
-    private WebElement afghanistanFromCountryDropdown;
+    @FindBy(css = ".select2-results__option.select2-results__option--highlighted")
+    private WebElement firstCountryFromDropdown;
 
     // Methods i.e. actions on the page
     // This method fill in all input fields in registration page
@@ -137,13 +137,14 @@ public class RegistrationPage extends BasePage{
     }
 
     // This method submit the registration form
-    public RegistrationPage submitRegistrationForm(){
+    public RegistrationPage clickSubmitBtn(){
 
         js.executeScript("arguments[0].scrollIntoView();",registerBtn);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
-        wait.until(ExpectedConditions.visibilityOf(registerBtn));
 
+        wait.until(ExpectedConditions.visibilityOf(registerBtn));
         registerBtn.click();
+
         return this;
     }
 
@@ -170,31 +171,29 @@ public class RegistrationPage extends BasePage{
         }
     }
 
-    // This method fill in all fields in registration page
-    public RegistrationPage fillInAllRegistrationFields(String firstAndLastName, String email, String password,
-                                              String confirmationPassword, String city, String address,
-                                              String postCode, String phone) {
+    // This method fill in unique email
+    public RegistrationPage enterUniqueEmail(String email) {
 
         String currentDateTime = BasePage.getCurrentDateAndTime();
 
-        enterData(firstAndLastNameInput, firstAndLastName);
         enterData(emailInput, email + "_" + currentDateTime + "@eurocoders.org");
-        enterData(passwordInput, password);
-        enterData(confirmationPasswordInput, confirmationPassword);
-        enterData(cityInput, city);
-        enterData(addressInput, address);
-        enterData(postCodeInput, postCode);
-        enterData(phoneInput, phone);
 
+        return this;
+    }
+
+    // This method select country from dropdown and click checkbox
+    public RegistrationPage fillInDropdownFieldAndCheckbox() {
+
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
+
+        js.executeScript("arguments[0].scrollIntoView();",countryDropdown);
         countryDropdown.click();
-        afghanistanFromCountryDropdown.click();
+        wait.until(ExpectedConditions.visibilityOf(firstCountryFromDropdown));
+        firstCountryFromDropdown.click();
+
+        js.executeScript("arguments[0].scrollIntoView();",termsCheckbox);
         termsCheckbox.click();
 
         return this;
-
-
-        // да пробвам дали ако използвам горния метод и тук само добавя имейла няма да изтрие вече въведения и да го въведе правилно
-
-
     }
 }

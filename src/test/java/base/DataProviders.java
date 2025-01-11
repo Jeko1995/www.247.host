@@ -117,4 +117,31 @@ public class DataProviders {
             throw (e);
         }
     }
+
+    //Data provider for correct registration credentials.
+    @DataProvider(name = "correctRegistrationCredentials")
+    public Object[][] readCorrectRegistrationCredentials() throws IOException, CsvException {
+        try {
+            CSVReader csvReader = new CSVReader(new FileReader("src/test/resources/correctRegistrationCredentials.csv"));
+            List<String[]> csvData = csvReader.readAll();
+            List<String[]> validRows = new ArrayList<>();
+
+            for (String[] row : csvData) {
+                if (!row[0].startsWith("//")) {
+                    validRows.add(row);
+                }
+            }
+
+            Object[][] csvDataObj = new Object[validRows.size()][8];
+
+            for (int i = 0; i < validRows.size(); i++) {
+                csvDataObj[i] = validRows.get(i);
+            }
+
+            return csvDataObj;
+
+        } catch (IOException | CsvException e) {
+            throw (e);
+        }
+    }
 }
