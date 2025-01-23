@@ -4,20 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Creating new method for entering all field in RegistrationPage.java&#10;- Making changes to old methods in RegistrationPage.java&#10;- Create getCurrentDateAndTime method in BasePage.java">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/VerifyEmailPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/registration/CheckWithCorrectDataRegistrationPageFields3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/correctRegistrationCredentials.csv" afterDir="false" />
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Create correctRegistrationCredentials.csv and VerifyEmailPage.java&#10;- Create and finish CheckWithCorrectDataRegistrationPageFields3.java TC">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/DataProviders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/UserPanelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/UserPanelPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/CheckForgottenPassBackBtn20.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/CheckForgottenPassBackBtn20.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithCorrectCredentials17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithCorrectCredentials17.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithInvalidCredentials18.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithInvalidCredentials18.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/registration/CheckRegistrationPageFieldsWithInvalidData47.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/registration/CheckWithInvalidDataRegistrationPageFields47.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/suites/allTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/suites/allTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/invalidRegistrationCredentials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/invalidRegistrationCredentials.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +79,7 @@
       <recent name="C:\Users\Zhelyazko\IdeaProjects\www.247.host\src\test\suites" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="www.247.host" />
@@ -198,9 +187,9 @@
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="TestNG.CheckForgottenPassBackBtn20.checkForgottenPassBackBtn20" />
-      <item itemvalue="TestNG.LoginWithValidCredentials17" />
       <item itemvalue="TestNG.LoginWithCorrectCredentials17" />
       <item itemvalue="TestNG.LoginWithInvalidCredentials18" />
+      <item itemvalue="TestNG.LoginWithValidCredentials17" />
     </list>
     <recent_temporary>
       <list>
@@ -452,7 +441,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736467918792</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="- Create correctRegistrationCredentials.csv and VerifyEmailPage.java&#10;- Create and finish CheckWithCorrectDataRegistrationPageFields3.java TC">
+      <option name="closed" value="true" />
+      <created>1736560478247</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1736560478247</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -467,7 +464,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding correct locators" />
     <MESSAGE value="Adding assert for the user panel page" />
     <MESSAGE value="Finish valid user login, rename class and start work on second case with invalid users. Still needs to check first one" />
     <MESSAGE value="Finish invalid users login and start work on checking back button on reset password page." />
@@ -492,6 +488,7 @@
     <MESSAGE value="- Remove reading email from config file" />
     <MESSAGE value="- Updating test data in invalidRegistrationCredentials.csv" />
     <MESSAGE value="- Creating new method for entering all field in RegistrationPage.java&#10;- Making changes to old methods in RegistrationPage.java&#10;- Create getCurrentDateAndTime method in BasePage.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Creating new method for entering all field in RegistrationPage.java&#10;- Making changes to old methods in RegistrationPage.java&#10;- Create getCurrentDateAndTime method in BasePage.java" />
+    <MESSAGE value="- Create correctRegistrationCredentials.csv and VerifyEmailPage.java&#10;- Create and finish CheckWithCorrectDataRegistrationPageFields3.java TC" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Create correctRegistrationCredentials.csv and VerifyEmailPage.java&#10;- Create and finish CheckWithCorrectDataRegistrationPageFields3.java TC" />
   </component>
 </project>
