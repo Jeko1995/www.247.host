@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Create correctRegistrationCredentials.csv and VerifyEmailPage.java&#10;- Create and finish CheckWithCorrectDataRegistrationPageFields3.java TC">
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Update invalidRegistrationCredentials.csv data">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/correctProfileSettingsCredentials" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/invalidProfileSettingsCredentials.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/correctLoginCredentials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/correctLoginCredentials.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/invalidRegistrationCredentials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/invalidRegistrationCredentials.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -449,7 +452,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736560478247</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="- Update invalidRegistrationCredentials.csv data">
+      <option name="closed" value="true" />
+      <created>1737647067533</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1737647067533</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -464,7 +475,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Adding assert for the user panel page" />
     <MESSAGE value="Finish valid user login, rename class and start work on second case with invalid users. Still needs to check first one" />
     <MESSAGE value="Finish invalid users login and start work on checking back button on reset password page." />
     <MESSAGE value="Adding auto scroll when is needed and add commenting option for csv files to skip some user data that is not needed. Check how to do reset pass test" />
@@ -489,6 +499,7 @@
     <MESSAGE value="- Updating test data in invalidRegistrationCredentials.csv" />
     <MESSAGE value="- Creating new method for entering all field in RegistrationPage.java&#10;- Making changes to old methods in RegistrationPage.java&#10;- Create getCurrentDateAndTime method in BasePage.java" />
     <MESSAGE value="- Create correctRegistrationCredentials.csv and VerifyEmailPage.java&#10;- Create and finish CheckWithCorrectDataRegistrationPageFields3.java TC" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Create correctRegistrationCredentials.csv and VerifyEmailPage.java&#10;- Create and finish CheckWithCorrectDataRegistrationPageFields3.java TC" />
+    <MESSAGE value="- Update invalidRegistrationCredentials.csv data" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Update invalidRegistrationCredentials.csv data" />
   </component>
 </project>
