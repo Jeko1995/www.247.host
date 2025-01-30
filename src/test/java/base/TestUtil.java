@@ -149,7 +149,13 @@ public class TestUtil extends DataProviders {
     private void cleanDirectory() throws IOException {
         File directory = new File(TestUtil.SCREENSHOTS_DIR);
 
-        Assert.assertTrue(directory.isDirectory(), "Invalid directory!");
+        File screenshotDir = new File(SCREENSHOTS_DIR);
+
+        if (!screenshotDir.exists()) {
+            screenshotDir.mkdirs();
+        }
+
+        Assert.assertTrue(directory.isDirectory(), "Correct directory for saving screenshots is not created!");
 
         FileUtils.cleanDirectory(directory);
         String[] fileList = directory.list();
