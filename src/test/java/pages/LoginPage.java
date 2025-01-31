@@ -38,14 +38,14 @@ public class LoginPage extends BasePage{
 
     // Methods i.e. actions on the page
     // This method fill in email and password field and click login button
-    public UserPanelPage enterUserDataAndLogin(String username, String password) {
+    public ServicesPage enterUserDataAndLogin(String username, String password) {
 
         enterData(emailInput, username);
         enterData(passwordInput, password);
 
         js.executeScript("arguments[0].scrollIntoView();",loginBtn);
         loginBtn.click();
-        return new UserPanelPage(driver);
+        return new ServicesPage(driver);
     }
 
     // Checks if the login error message is displayed

@@ -9,25 +9,28 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class UserPanelPage extends BasePage{
+public class ServicesPage extends BasePage{
 
     // Constructor
-    public UserPanelPage(WebDriver driver) {
+    public ServicesPage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
     }
 
     // Elements
     @FindBy(xpath = "(//a[@class='mr-3 logged-user d-flex align-items-center'])[2]")
-    private WebElement loggedUserNameAndIconBtn;
+    private WebElement loggedUserNameAndIconDropdown;
+
+    @FindBy(xpath = "//div[contains(@class, 'd-none')]//a[text()='Profile settings']")
+    private WebElement profileSettingsBtnFromDropdown;
 
     // Methods i.e. actions on the page
     //Checks if user is аt user panel page
-    public boolean isAtUserPanelPage() {
+    public boolean isAtServicesPage() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(3));
 
         try {
-            wait.until(ExpectedConditions.visibilityOf(loggedUserNameAndIconBtn));
+            wait.until(ExpectedConditions.visibilityOf(loggedUserNameAndIconDropdown));
             return true;
 
         } catch (Exception e) {

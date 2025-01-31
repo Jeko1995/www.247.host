@@ -62,17 +62,19 @@ public class RegistrationPage extends BasePage{
             " or text()='Полето Име и фамилия трябва да бъде по-малко от 255 знака.'" +
             " or text()='Полето Име и фамилия е в невалиден формат.'" +
             " or text()='Името трябва да съдържа поне 3 символа.'" +
-            " or text()='Фамилията трябва да съдържа поне 3 символа.'] ")
+            " or text()='Фамилията трябва да съдържа поне 3 символа.']")
     private WebElement fullNameFieldAllErrorMsg;
 
     @FindBy(xpath = "//*[text()='Email field is required.'" +
             " or text()='Please add valid email adress.'" +
             " or text()='You already have been registered.'" +
             " or text()='The E-mail must not be greater than 255 characters.'" +
+            " or text()='The E-mail format is invalid.'" +
             " or text()='Полето за e-mail е задължително.'" +
             " or text()='Моля въведете валиден e-mail.'" +
             " or text()='Този имейл е вече регистриран.'" +
-            " or text()='Полето Ел. поща трябва да бъде по-малко от 255 знака.']")
+            " or text()='Полето Ел. поща трябва да бъде по-малко от 255 знака.'" +
+            " or text()='Полето Ел. поща е в невалиден формат.']")
     private WebElement emailFieldAllErrorMsg;
 
     @FindBy(xpath = "//*[text()='Password field is required.'" +
