@@ -2,6 +2,7 @@ package base;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.commons.io.FileUtils;
+import org.jetbrains.annotations.NotNull;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,6 +21,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Properties;
 
 public class TestUtil extends DataProviders {
@@ -94,25 +97,25 @@ public class TestUtil extends DataProviders {
         if (driver == null) {
             switch (browser) {
                 case "firefox", "mozilla", "mozilla firefox", "Mozilla firefox", "Mozilla Firefox", "Mozilla", "Firefox"
-                        -> driver = setupFireFoxDriver();
+                        -> setupFireFoxDriver();
 
-                default -> driver = setupChromeDriver();
+                default -> setupChromeDriver();
             }
         }
     }
 
     // Method to set up the ChromeDriver.
-    private WebDriver setupChromeDriver() {
+    private void setupChromeDriver() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
-        return driver = new ChromeDriver(options);
+        driver = new ChromeDriver(options);
     }
 
     // Method to set up the FirefoxDriver.
-    private WebDriver setupFireFoxDriver() {
+    private void setupFireFoxDriver() {
         WebDriverManager.firefoxdriver().setup();
-        return driver = new FirefoxDriver();
+        driver = new FirefoxDriver();
     }
 
     // Method to accept cookies
@@ -137,7 +140,7 @@ public class TestUtil extends DataProviders {
             try{
                 TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
                 File screenshot = takesScreenshot.getScreenshotAs(OutputType.FILE);
-                String testName = testResult.getName() + "_" + System.currentTimeMillis();
+                String testName = testResult.getName() + "_" + getCurrentDateAndTime();
                 FileUtils.copyFile(screenshot, new File(SCREENSHOTS_DIR.concat(testName).concat(".jpg")));
             }catch (IOException e){
                 System.out.println("Unable to create screenshot file: " + e.getMessage());
@@ -160,9 +163,15 @@ public class TestUtil extends DataProviders {
         FileUtils.cleanDirectory(directory);
         String[] fileList = directory.list();
         if (fileList != null && fileList.length == 0) {
-            System.out.printf("All files are deleted in Directory: %s%n", TestUtil.SCREENSHOTS_DIR);
+            System.out.printf("All files are deleted in Directory: %s%n", SCREENSHOTS_DIR);
         } else {
-            System.out.printf("Unable to delete the files in Directory:%s%n", TestUtil.SCREENSHOTS_DIR);
+            System.out.printf("Unable to delete the files in Directory:%s%n", SCREENSHOTS_DIR);
         }
+    }
+
+    //This method gets the current date and time and formats it
+    @NotNull
+    public static String getCurrentDateAndTime() {
+        return LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yy_HH-mm-ss"));
     }
 }

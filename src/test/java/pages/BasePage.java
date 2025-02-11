@@ -1,12 +1,9 @@
 package pages;
 
-import org.jetbrains.annotations.NotNull;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 public class BasePage {
     protected WebDriver driver;
@@ -26,10 +23,5 @@ public class BasePage {
         element.click();
         element.clear();
         element.sendKeys(value);
-    }
-
-    @NotNull
-    public static String getCurrentDateAndTime() {
-        return LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yy_HH-mm-ss"));
     }
 }

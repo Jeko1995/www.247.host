@@ -1,5 +1,6 @@
 package pages;
 
+import base.TestUtil;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -176,7 +177,7 @@ public class RegistrationPage extends BasePage{
     // This method fill in unique email
     public RegistrationPage enterUniqueEmail(String email) {
 
-        String currentDateTime = BasePage.getCurrentDateAndTime();
+        String currentDateTime = TestUtil.getCurrentDateAndTime();
 
         enterData(emailInput, email + "_" + currentDateTime + "@eurocoders.org");
 

@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Adding check for screenshot directory in TestUtil.java">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ProfileSettingsPage.java" afterDir="false" />
+    <list default="true" id="aa0cfea1-be82-46bc-a571-d8e93e6a07a2" name="Changes" comment="- Rename some methods and page files&#10;- Add new testing data for registration and profile settings&#10;- Create ProfileSettingsPage.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/TestUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/UserPanelPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ServicesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithCorrectCredentials17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/LoginWithCorrectCredentials17.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/invalidProfileSettingsCredentials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/invalidProfileSettingsCredentials.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/invalidRegistrationCredentials.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/invalidRegistrationCredentials.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,36 +52,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.C:/Users/USER/IdeaProjects/www.247.host/src/test/suites/allTests.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.C:/Users/user/IdeaProjects/www.247.host/src/test/suites/allTests.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CheckForgottenPass19.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.CheckResetPassBackBtn20.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginWithCorrectCredentials17.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginWithInvalidCredentials18.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginWithValidCredentials17.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Zhelyazko/IdeaProjects/www.247.host/src/test/java/tests/login&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.C:/Users/USER/IdeaProjects/www.247.host/src/test/suites/allTests.xml.executor": "Run",
+    "TestNG.C:/Users/user/IdeaProjects/www.247.host/src/test/suites/allTests.xml.executor": "Run",
+    "TestNG.CheckForgottenPass19.executor": "Run",
+    "TestNG.CheckResetPassBackBtn20.executor": "Run",
+    "TestNG.CheckWithCorrectDataRegistrationPageFields3.executor": "Run",
+    "TestNG.LoginWithCorrectCredentials17.executor": "Run",
+    "TestNG.LoginWithInvalidCredentials18.executor": "Run",
+    "TestNG.LoginWithValidCredentials17.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Zhelyazko/IdeaProjects/www.247.host/src/test/java/tests/login",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "inlay.hints"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Zhelyazko\IdeaProjects\www.247.host\src\test\suites" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="www.247.host" />
@@ -464,7 +461,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738195357914</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="- Rename some methods and page files&#10;- Add new testing data for registration and profile settings&#10;- Create ProfileSettingsPage.java">
+      <option name="closed" value="true" />
+      <created>1738343013727</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1738343013727</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -479,7 +484,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Finish invalid users login and start work on checking back button on reset password page." />
     <MESSAGE value="Adding auto scroll when is needed and add commenting option for csv files to skip some user data that is not needed. Check how to do reset pass test" />
     <MESSAGE value="Working on test for changing password. Make data provider for getting only username and make methods to fill in field for email and check if confirmation message is send" />
     <MESSAGE value="Fixing problem with not failing test for forgotten pass when cant find confirmation msg on the page" />
@@ -504,6 +508,7 @@
     <MESSAGE value="- Create correctRegistrationCredentials.csv and VerifyEmailPage.java&#10;- Create and finish CheckWithCorrectDataRegistrationPageFields3.java TC" />
     <MESSAGE value="- Update invalidRegistrationCredentials.csv data" />
     <MESSAGE value="- Adding check for screenshot directory in TestUtil.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Adding check for screenshot directory in TestUtil.java" />
+    <MESSAGE value="- Rename some methods and page files&#10;- Add new testing data for registration and profile settings&#10;- Create ProfileSettingsPage.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Rename some methods and page files&#10;- Add new testing data for registration and profile settings&#10;- Create ProfileSettingsPage.java" />
   </component>
 </project>
